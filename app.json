@@ -1,0 +1,11 @@
+{
+  "name": "elgatostore-badge",
+  "description": "A badge for elgato StreamDeck App Store",
+  "repository": "https://github.com/SantiMA10/elgatostore-badge",
+  "keywords": ["streamdeck", "badge"],
+  "scripts": {
+    "postdeploy": "yarn install"
+  },
+  "success_url": "/",
+  "image": "heroku/nodejs"
+}
