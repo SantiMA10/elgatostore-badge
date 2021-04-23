@@ -1,4 +1,5 @@
 import { Server, ServerRoute } from "@hapi/hapi";
+import Joi from "joi";
 
 import { allRoutes } from "./routes";
 
@@ -24,6 +25,7 @@ export const buildServer = async (routes: ServerRoute[]): Promise<Server> => {
     port: process.env.PORT || 3000,
   });
 
+  server.validator(Joi);
   server.route(routes);
 
   return server;
