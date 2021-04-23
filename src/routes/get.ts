@@ -25,7 +25,7 @@ export const routes = (): ServerRoute => ({
 
       return h
         .response({
-          color: "orange",
+          color: "success",
           label: "StreamDeck AppStore",
           message: `${plugin.downloads}`,
           schemaVersion: 1,

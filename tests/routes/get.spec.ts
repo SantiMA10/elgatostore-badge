@@ -106,7 +106,7 @@ describe("GET /", () => {
       schemaVersion: 1,
       label: "StreamDeck AppStore",
       message: "5972",
-      color: "orange",
+      color: "success",
     });
   });
 });
